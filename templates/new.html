@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/article/">
+    {% csrf_token %}
+    <input type="text" id="title" name="title" placeholder="제목">
+    <input type="text" id="content" name="content" placeholder="내용">
+    <select id="category" name="category">
+        <option value="none">선택</option>
+        {% for c in category %}
+            <option value="{{ c.id }}">{{ c.name }} </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="글쓰기">
+</form>
+
+</body>
+</html>

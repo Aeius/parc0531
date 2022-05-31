@@ -1,0 +1,6 @@
+.idea/
+blog/__pycache__/
+blog/migrations/0001_initial.py
+blog/migrations/__pycache__/
+Prac0531/__pycache__/
+db.sqlite3

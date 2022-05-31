@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>카테고리 종류</h4>
+{% for c in category %}
+<a href="/article/{{ c.id }}/">{{ c }}</a>
+{% endfor %}
+<a href="/article/">글작성하러가기</a>
+</body>
+</html>
